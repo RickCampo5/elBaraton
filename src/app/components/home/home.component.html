@@ -1,0 +1,7 @@
+<app-menu></app-menu>
+<section class="home">
+  <h2>Todas las Categorías</h2>
+  <div *ngFor="let categorie of content.categories">
+    <app-display-cat [categorie]='categorie' ></app-display-cat>
+  </div>
+</section>

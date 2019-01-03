@@ -1,0 +1,12 @@
+<section class="display-content">
+  <h2>{{categorie.name}}</h2>
+  <div class="sublevelOne-container" *ngFor="let sublevelOne of categorie.sublevels">
+    <h3>{{sublevelOne.name}}</h3>
+    <div class="sublevelTwo-container">
+      <div class="card" *ngFor="let sublevelTwo of sublevelOne.sublevels">
+        <img src="../../../assets/No_Image_Available.jpg" alt="">
+        <p>{{sublevelTwo.name}}</p>
+      </div>
+    </div>
+  </div>
+</section>

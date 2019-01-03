@@ -1,0 +1,113 @@
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2963a;
+    width: 100vw;
+    height: 100px;
+    color: white;
+    border-bottom: 2px solid #d06902;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.nav-bar .title {
+    padding-left: 20px;
+}
+
+.title h2 {
+    margin: 0;
+}
+
+.nav-bar .cart-div {
+    padding-right: 80px;
+}
+
+.cart-div {
+    display: flex;
+}
+
+.cart-div i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+    font-size: 30px;
+}
+
+.categorie-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.categorie-div i {
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+.categories-subdiv{
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    width: 200px;
+    padding: 20px;
+    position: fixed;
+    z-index: 1;
+    top: -900px;
+}
+
+.visible {
+    display: inherit;
+    background-color: #f2963a;
+    color: white;
+    padding-bottom: 20px;
+    animation: slideIn 0.5s linear forwards;
+}
+
+.categories-subdiv a {
+    margin-top: 10px;
+}
+
+.hide {
+    display: inherit;
+    background-color: #f2963a;
+    color: white;
+    padding-bottom: 20px;
+    animation: slideUp 0.3s linear forwards;
+}
+
+.hidden-arrow {
+    display: none;
+}
+
+.show-arrow {
+    display: inherit;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+@keyframes slideIn {
+    from {
+        top: -900px;
+    }
+    to {
+        top: 102px;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        top: 102px;
+    }
+    to {
+        top: -900px;
+    }
+}
