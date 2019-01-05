@@ -1,6 +1,6 @@
 <nav class="nav-bar">
   <div class="title">
-    <h2>El Baratón</h2>
+   <a [routerLink]="['/home']"><h2>El Baratón</h2></a>
     <div (click)="showCategories()" class="categorie-div">
       <p>Categorías</p>
       <i class="fas fa-angle-down show-arrow" id="arrowDown"></i>
@@ -14,7 +14,7 @@
 </nav>
 <div id="container-subdiv" class="container hide" style="display:none">
   <div *ngFor="let categorie of menu.categories" class="categories-subdiv">
-    <a [routerLink]="['']">{{categorie.name}}</a>
+    <a [routerLink]="['/categorie', categorie.id]">{{categorie.name}}</a>
     <ul *ngFor="let subcategorie of categorie.sublevels">
       <li>{{subcategorie.name}}</li>
       <ul *ngFor="let subcategorieTwo of subcategorie.sublevels">

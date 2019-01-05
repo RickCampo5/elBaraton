@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { DisplayCatComponent } from './components/display-cat/display-cat.component';
+import { CategoriesComponent } from './components/categories/categories.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     MenuComponent,
-    DisplayCatComponent
+    DisplayCatComponent,
+    CategoriesComponent
   ],
   imports: [
     BrowserModule,

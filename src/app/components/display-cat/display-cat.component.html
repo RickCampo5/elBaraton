@@ -1,5 +1,5 @@
 <section class="display-content">
-  <h2>{{categorie.name}}</h2>
+  <a [routerLink]="['/categorie', categorie.id]"><h2>{{categorie.name}}</h2></a>
   <div class="sublevelOne-container" *ngFor="let sublevelOne of categorie.sublevels">
     <h3>{{sublevelOne.name}}</h3>
     <div class="sublevelTwo-container">

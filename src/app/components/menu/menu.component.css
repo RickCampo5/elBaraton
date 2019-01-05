@@ -94,6 +94,11 @@ ul {
     padding-left: 20px;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
 @keyframes slideIn {
     from {
         top: -900px;

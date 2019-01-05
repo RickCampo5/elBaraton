@@ -1,0 +1,20 @@
+<section class="container">
+  <div class="title">
+    <h2>{{filteredCat.name}}</h2>
+    <ul class="sublevels">
+      <li *ngFor="let sublevel of filteredCat.sublevels">{{sublevel.name}}</li>
+    </ul>
+  </div>
+  <div class="card-container">
+    <div class="card" *ngFor="let product of filteredProd">
+      <img src="../../../assets/No_Image_Available.jpg">
+      <h3>{{product.name}}</h3>
+      <ul class="lista-producto">
+        <li>{{product.price}}</li>
+        <li *ngIf="product.available==true">Disponible</li>
+        <li *ngIf="product.available==false">No Disponible</li>
+      </ul>
+      <button>Agregar al carrito</button>
+    </div>
+  </div>
+</section>
